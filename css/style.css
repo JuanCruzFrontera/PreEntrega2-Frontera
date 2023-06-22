@@ -10,7 +10,7 @@
 .menu-navegador {
   background-color: black;
   padding: 10px;
-  text-align: left;
+  text-align: right;
   top: 0px;
   width: 100%;
 }
@@ -27,12 +27,13 @@
 
 .menu-navegador ul li a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 24px;
   text-transform: uppercase;
 }
 
 .logo {
+  text-align: left;
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
@@ -43,42 +44,17 @@
 }
 
 .logo img {
-  width: 30px;
-  height: 30px;
-}
-.logo img img {
-  vertical-align: middle;
-  border-style: none;
-  overflow-clip-margin: content-box;
-  overflow: clip;
-}
-
-a {
-  color: #007bff;
-  text-decoration: none;
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
+  text-align: left;
+  width: 50px;
+  height: 50px;
 }
 
 /*fin menu*/
-/* cards*/
-.cajaimg {
-  width: 100%;
-  height: 300px;
-  margin: 50px;
-  border-radius: 1px;
-  border-color: brown;
-}
-
-.cajaimg img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 100%;
-  border-color: blueviolet;
-}
-
 /* main*/
+.main {
+  background-color: #fff;
+}
+
 .contenedorMain {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -93,6 +69,7 @@ a {
   background-size: cover;
   height: 50em;
   width: 100%;
+  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,6 +90,54 @@ a {
   align-self: center;
   color: #fff;
   padding: 1rem;
+}
+
+.contenidoDos__img {
+  grid-area: foto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.contenidoDos__texto {
+  grid-area: texto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.contenidoDos__titulo {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2.5rem;
+  padding-left: 1.875rem;
+  color: #000;
+}
+
+.contenidoDos__parrafo {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2rem;
+  color: #363636;
+  padding-top: 1.875rem;
+}
+
+/* cards*/
+.cajaimg {
+  width: 100%;
+  height: 300px;
+  margin: 50px;
+  border-radius: 1px;
+  border-color: brown;
+}
+
+.cajaimg img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 100%;
+  border-color: blueviolet;
 }
 
 /* cards*/
