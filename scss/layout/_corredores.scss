@@ -1,4 +1,10 @@
 /*corredores*/
+
+
+.maincorredores{
+    padding-top: 80px;
+}
+
 .corredores {
     display: flex;
     justify-content: center;
@@ -68,6 +74,11 @@
 }
 
 @media all and (max-width:768px) {
+
+    .maincorredores{
+        padding-top: 250px;
+    }
+
     .corredores {
         display: flex;
         justify-content: center;
