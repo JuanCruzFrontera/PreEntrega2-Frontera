@@ -18,8 +18,8 @@
 .menu-navegador { 
   
     background-color: black;
-    padding: 10px;
-    text-align: right;
+    padding: 3px;
+    text-align: left;
     top: 0px;
     width: 100%;
     
@@ -28,7 +28,7 @@
 }
 
 .menu-navegador li {
- 
+  
     list-style: none;
     display: inline;
 
@@ -48,8 +48,8 @@
     font-size: 24px;
     text-transform: uppercase;
 }
-.logo {
-  text-align: left;
+.logo { 
+  
   display: inline-block;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
@@ -59,8 +59,8 @@
   white-space: nowrap;
 }
 .logo img{ 
-  text-align: left;
-  width: 50px;
+  
+   width: 50px;
   height: 50px;
  
   
@@ -80,6 +80,7 @@
 
 .contenedorMain {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
@@ -135,13 +136,20 @@
   font-family: "Bebas Neue", cursive;
   font-size: 2.5rem;
   padding-left: 1.875rem;
-  color: #000;
+  color: #482d2d;
 }
 .contenidoDos__parrafo {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 1.2rem;
-    color: #363636;
+    color: #1e1616;
     padding-top: 1.875rem;
+}
+.contenidoDos{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+
 }
 
 
