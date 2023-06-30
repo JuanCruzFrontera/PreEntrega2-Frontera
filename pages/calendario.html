@@ -2,137 +2,448 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primera pagina web </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Calendario </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
-    <header>
-        <nav id="menu" class="menu-navegador fixed-top navbar-expand-md" >
-            <ul>
-                <li>
-                    <a href="../index.html" class="logo">
-                        <img src="../images/630617.png" alt="Moto gp logo">
-                    </a>
-                </li>
-                <li>
-                    <a href="../index.html">Inicio</a>
-                </li>
+<body class="clanedario-main">
+  <header>
+    <nav id="menu" class="navbar navbar-expand-lg menu-navegador fixed-top">
+      <div class="container-fluid">
+        <a href="../index.html" class="logo">
+          <img src="../images/630617.png" alt="Moto gp logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="menu" href="../index.html"> Inicio</a>
+            </li>
 
-                <li>
-                    <a href="../pages/corredores.html">Corredores</a>
-                </li>
+            <li class="nav-item">
+              <a href="../pages/corredores.html">Corredores</a>
+            </li>
 
-                <li>
-                    <a href="./calendario.html">Calendario</a>
-                </li>
-                <li>
-                    <a href="../pages/campeones.html">Campeones</a>
-                </li>
-                <li>
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
+            <li class="nav-item">
+              <a href="./calendario.html">Calendario</a>
+            </li>
 
+            <li class="nav-item">
+              <a href="../pages/campeones.html">Campeones</a>
+            </li>
 
+            <li class="nav-item">
+              <a href="../pages/contacto.html">Contacto</a>
+            </li>
 
+          </ul>
 
-            </ul>
-
-
-
-
-
-
-        </nav>
-
-
-
-
-    </header>
-    <main>
+        </div>
+      </div>
+    </nav>
 
 
 
 
+  </header>
+  <main class="maincalendario">
+    <h1 class="temporada">TEMPORADA 2023</h1>
+    <section class="calendario">
+      <div class="carrera">
+        <img src="../images/por-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>Grande Prémio Tissot de Portugal</h1>
+          <p>PORTUGAL
+            | Autódromo Internacional do Algarve</p>
+          <p> Fecha: 26 de Marzo</p>
+
+          <p>#PortugueseGP</p>
+
+          <p>GP:1</p>
+
+
+        </div>
+      </div>
+      <div class="carrera">
+        <img src="../images/arg-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>Gran Premio Michelin® de la República Argentina</h1>
+          <p>ARGENTINA
+            | Termas de Río Hondo</p>
+          <p> Fecha: 01 de Abril</p>
+
+          <p>#ArgentinaGP</p>
+
+          <p> GP:2</p>
+
+
+        </div>
+      </div>
+      <div class="carrera">
+        <img src="../images/ame-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>Red Bull Grand Prix of The Americas</h1>
+          <p>UNITED STATES
+            | Circuit of The Americas</p>
+          <p> Fecha: 15 de Abril</p>
+
+          <p>#AmericasGP</p>
+
+          <p>GP:3</p>
+
+
+        </div>
+      </div>
+      <div class="carrera">
+        <img src="../images/spa-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>Gran Premio MotoGP™ Guru by Gryfyn de España</h1>
+          <p>SPAIN
+            | Circuito de Jerez - Ángel Nieto</p>
+          <p> Fecha: 29 de Abril</p>
+
+          <p>#SapinshGP</p>
+
+          <p>GP:4</p>
+
+
+        </div>
+      </div>
+      <div class="carrera">
+        <img src="../images/fra-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>Shark Grand Prix de France</h1>
+          <p>FRANCE
+            | Le Mans</p>
+          <p> Fecha: 13 de Mayo</p>
+
+          <p>#FrenchGP</p>
+
+          <p>GP:5</p>
+
+
+        </div>
+      </div>
+      <div class="carrera">
+        <img src="../images/ita-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>Gran Premio d'Italia Oakley</h1>
+          <p>ITALY
+            | Autodromo Internazionale del Mugello</p>
+          <p> Fecha: 10 de Junio</p>
+
+          <p>#ItalianGP</p>
+
+          <p>GP:6</p>
+
+
+        </div>
+      </div>
+      <div class="carrera">
+        <img src="../images/ger-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>Liqui Moly Motorrad Grand Prix Deutschland</h1>
+          <p>GERMANY
+            | Sachsenring</p>
+          <p> Fecha: 17 de Junio</p>
+
+          <p>#GermanGP</p>
+
+          <p>GP:7</p>
+
+
+        </div>
+      </div>
+      <div class="carrera">
+        <img src="../images/ned-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>Motul TT Assen</h1>
+          <p>NETHERLANDS
+            | TT Circuit Assen</p>
+          <p> Fecha: 24 de Junio</p>
+
+          <p>#DutchGP</p>
+
+          <p>GP:8</p>
+
+
+        </div>
+      </div>
+      <div class="carrera">
+        <img src="../images/gbr-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>Monster Energy British Grand Prix</h1>
+          <p>UNITED KINGDOM
+            | Silverstone Circuit</p>
+          <p> Fecha: 05 de Agosto</p>
+
+          <p>#BritishGP</p>
+
+          <p>GP:9</p>
+
+
+        </div>
+      </div>
+      <div class="carrera">
+        <img src="../images/aut-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>CryptoDATA Motorrad Grand Prix von Österreich</h1>
+          <p>AUSTRIA
+            | Red Bull Ring - Spielberg</p>
+          <p> Fecha: 19 de Agosto</p>
+
+          <p>#AustrianGP</p>
+
+          <p>GP:10</p>
+
+
+        </div>
+      </div>
+      <div class="carrera">
+        <img src="../images/cat-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>Gran Premi Monster Energy de Catalunya</h1>
+          <p>SPAIN
+            | Circuit de Barcelona-Catalunya</p>
+          <p> Fecha: 02 de Septiembre</p>
+
+          <p>#CatalanGP</p>
+
+          <p>GP:11</p>
+
+
+        </div>
+      </div>
+      <div class="carrera">
+        <img src="../images/rsm-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>Gran Premio Red Bull di San Marino e della Riviera di Rimini</h1>
+          <p>ITALY
+            | Misano World Circuit Marco Simoncelli</p>
+          <p> Fecha: 09 de Septiembre</p>
+
+          <p>#SanMarinoGP</p>
+
+          <p>GP:12</p>
+
+          <p> </p>
+        </div>
+      </div>
+      <div class="carrera">
+        <img src="../images/ind-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>rand Prix of India</h1>
+          <p>INDIA
+            | Buddh International Circuit</p>
+          <p> Fecha: 23 de Septiembre</p>
+
+          <p>#IndiaGP</p>
+
+          <p>GP:13</p>
+
+
+        </div>
+      </div>
+      <div class="carrera">
+        <img src="../images/jpn-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>Motul Grand Prix of Japan</h1>
+          <p>ITALY
+            | Autodromo Internazionale del Mugello</p>
+          <p> Fecha: 30 de Septiembre</p>
+
+          <p>#JapaneseGP</p>
+
+          <p>GP:14</p>
+
+          <p> </p>
+        </div>
+      </div>
+      <div class="carrera">
+        <img src="../images/ina-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>Pertamina Grand Prix of Indonesia</h1>
+          <p>INDONESIA
+            | Mandalika International Street Circuit</p>
+          <p> Fecha: 14 de Octubre</p>
+
+          <p>#IndonesianGP</p>
+
+          <p>GP:15</p>
+
+
+        </div>
+      </div>
+      <div class="carrera">
+        <img src="../images/aus-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>MotoGP™ Guru by Gryfyn Australian Motorcycle Grand Prix</h1>
+          <p>AUSTRALIA
+            | Phillip Island</p>
+          <p> Fecha: 21 de Octubre</p>
+
+          <p>#AustralianGP</p>
+
+          <p>GP:16</p>
+
+
+        </div>
+      </div>
+      <div class="carrera">
+        <img src="../images/tha-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>OR Thailand Grand Prix</h1>
+          <p>THAILAND
+            | Chang International Circuit</p>
+          <p> Fecha: 28 de Octubre</p>
+
+          <p>#ThaiGP</p>
+
+          <p>GP:17</p>
+
+
+        </div>
+      </div>
+      <div class="carrera">
+        <img src="../images/mal-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>PETRONAS Grand Prix of Malaysia</h1>
+          <p>MALAYSIA
+            | Sepang International Circuit</p>
+          <p> Fecha: 11 de Noviembre </p>
+
+          <p>#MalaysianGP</p>
+
+          <p>GP:18</p>
+
+
+        </div>
+      </div>
+      <div class="carrera">
+        <img src="../images/qat-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>Qatar Airways Grand Prix of Qatar</h1>
+          <p>QATAR
+            | Lusail International Circuit</p>
+          <p> Fecha: 18 de Noviembre</p>
+
+          <p>#QatarGP</p>
+
+          <p>GP:19</p>
+
+
+        </div>
+      </div>
+      <div class="carrera">
+        <img src="../images/val-card@2x.jpg" alt="">
+        <div class="carrera_contenido ">
+
+          <h1>Gran Premio Motul de la Comunitat Valenciana</h1>
+          <p>SPAIN
+            | Circuit Ricardo Tormo</p>
+          <p> Fecha: 25 de Noviembre</p>
+
+          <p>#ValenciaGP</p>
+
+          <p>GP:20</p>
+
+
+        </div>
+      </div>
+    </section>
+  </main>
 
 
 
 
+  <footer>
 
-
-
-
-
-
-
-
-
-
-
-
-    </main>
-
-
-
-    
     <footer>
+      <footer class="footer" data-aos="fade-up" data-aos-duration="3000">
+        <section class="footer__contenido">
+          <h3 class="footer__titulo">MotoGP</h3>
+          <hr class="footer__hrContenido">
+          <p class="footer__parrafo">
+            Web sin fines de lucro creada por un fan.
+          </p>
+        </section>
+        <section class="footer__img">
+          <img src="../images/630617.png" alt="logo MotoGP" class="footer__imagen">
+        </section>
+        <section class="footer__redes">
+          <h3 class="footer__redesTitulo">Encontranos en</h3>
+          <hr class="footer__hrRedes">
+          <div class="footer__item">
+            <a href="https://www.facebook.com/MotoGP/?locale=es_LA" target="_blank" class="footer__link">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="https://www.youtube.com/@motogp" target="_blank" class="footer__link">
+              <i class=" fab fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/motogp/" target="_blank" class="footer__link">
+              <i class="fab fa-instagram"></i>
+            </a>
 
-        <footer>
-            <footer class="footer" data-aos="fade-up" data-aos-duration="3000">
-                <section class="footer__contenido">
-                  <h3 class="footer__titulo">MotoGP</h3>
-                  <hr class="footer__hrContenido">
-                  <p class="footer__parrafo">
-                    Web sin fines de lucro creada por un fan.
-                  </p>
-                </section>
-                <section class="footer__img">
-                  <img src="../images/630617.png" alt="logo MotoGP" class="footer__imagen">
-                </section>
-                <section class="footer__redes">
-                  <h3 class="footer__redesTitulo">Encontranos en</h3>
-                  <hr class="footer__hrRedes">
-                  <div class="footer__item">
-                    <a href="https://www.facebook.com/MotoGP/?locale=es_LA" target="_blank" class="footer__link">
-                      <i class="fab fa-facebook-square"></i>
-                    </a>
-                    <a href="https://www.youtube.com/@motogp" target="_blank" class="footer__link">
-                                  <i class=" fab fa-youtube"></i>
-                    </a>
-                    <a href="https://www.instagram.com/motogp/" target="_blank" class="footer__link">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                    
-                    <a href="https://twitter.com/MotoGP_ESPN" target="_blank" class="footer__link">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                    
-                  </div>
-            
-                </section>
-                <section class="footer__creador">
-                  <p class="footer__diseñador">Web by <a href="" target=""
-                      class="footer__linke">Juan Cruz Frontera</a> © 2023</p>
-                </section>
-              </footer>
+            <a href="https://twitter.com/MotoGP_ESPN" target="_blank" class="footer__link">
+              <i class="fab fa-twitter"></i>
+            </a>
 
-        </footer>
+          </div>
 
-
+        </section>
+        <section class="footer__creador">
+          <p class="footer__diseñador">Web by <a href="" target="" class="footer__linke">Juan Cruz Frontera</a> © 2023
+          </p>
+        </section>
+      </footer>
 
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 
 </body>

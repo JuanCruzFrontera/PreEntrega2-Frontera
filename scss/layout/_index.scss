@@ -13,7 +13,9 @@
 
 
 /* menu de navegacion*/
-
+.navbar-toggler{
+background-color: red;
+}
 
 .menu-navegador { 
   
@@ -75,6 +77,8 @@
 
 /* main*/  
 .main{
+  overflow: hidden;
+
   background-color: #fff;
 }
 
@@ -232,17 +236,18 @@
     display: flex;
     flex-flow: column;
     justify-content: center;
-    background-color: #5757559e;
+    background-color: #000000;
     align-items: center;
     gap: 150px;
     
 }
 .cajas h2{
-  
-  color: #000;
+  padding: 15px;
+  color: #ffffff;
 }
 .cajas p{
-  color: rgb(109, 20, 20);
+  padding: 20px;
+  color: #ffffff;
 }
 
 
@@ -286,7 +291,7 @@
   grid-template-areas: "contenido img redes"
  "creador creador creador";
   height: auto;
-  background-color: #000; }
+  background-color: #414141; }
   .footer__contenido {
     grid-area: contenido;
     display: flex;
@@ -302,7 +307,7 @@
   .footer__parrafo {
     font-family: "Source Sans Pro", sans-serif;
     font-size: 1rem;
-    color: #c5c5c5;
+    color: #ffffff;
     align-self: center; }
   .footer__hrContenido, .footer__hrRedes {
     width: 60%;
@@ -339,7 +344,7 @@
     color: #fff; }
   .footer__creador {
     grid-area: creador;
-    background-color: #414141;
+    background-color: #000000;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -359,8 +364,56 @@
 
 
   @media screen and (max-width: 768px) {
+    .contenedorMain {
+      grid-template-areas:
+        "destacado"
+        "about"
+        "compra";
+      grid-template-columns: 1fr;
+    }
+  
+    .contenidoUno__titulo {
+      padding-top: 8rem;
+      font-size: 3.5rem;
+    }
+  
+    .contenidoUno__subtitulo {
+      font-size: 1.2rem;
+    }
 
+
+    .contenidoDos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "foto texto";
+  }
+     /* cards*/
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
     
+      .card-body {
+        width: 90%;
+        max-width: 300px;
+      }
+    
+    
+
+
+     /*cajas*/
+    .cajac1{
+      flex-direction:column;
+      }
+      .cajac2{
+        flex-direction: column;
+
+      }
+      .cajac3{
+        flex-direction: column;
+      }
+      .cajac4{
+        flex-direction: column;
+      }
 
     /* Ajusta el diseño para pantallas más pequeñas */
     .footer {
@@ -368,8 +421,11 @@
       grid-template-rows: auto auto;
       grid-template-areas:
         "img"
+
         "redes"
+
         "contenido"
+
         "creador";
     }
   
