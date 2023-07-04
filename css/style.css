@@ -500,6 +500,7 @@
   background-color: #9b9b9b;
   gap: 40px;
   padding: 20px;
+  overflow: hidden;
 }
 
 .campeon {
@@ -724,6 +725,7 @@
     height: 80%;
     object-fit: cover;
     filter: blur(0px);
+    padding: 15px;
   }
 }
 
